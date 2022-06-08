@@ -1,0 +1,12 @@
+= Jetty Runner Package
+
+This is an EL8/EL9 (CentOS/RedHat/Rocky) RPM package for Jetty Runner, a dependency of the https://ipt.gbif.org/manual[GBIF IPT].
+
+== Building
+
+(This section is for GBIF developers.)
+
+. `make clean && make rpm && make deploy-testing`
+. `make deploy`
+
+The RPM is published to https://packages.gbif.org/
