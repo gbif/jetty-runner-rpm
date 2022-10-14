@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
 # Check if the package version is up-to-date
-nr_ver=$(curl -Ss 'https://search.maven.org/solrsearch/select?q=g:org.eclipse.jetty+a:jetty-runner&rows=20&wt=json' | jq -r '.response.docs[0].latestVersion')
+nr_ver=$(curl -Ss 'https://search.maven.org/solrsearch/select?q=g:org.eclipse.jetty+a:jetty-runner+v:10*&rows=20&wt=json' | jq -r '.response.docs[0].v')
 
 if curl -I --fail https://packages.gbif.org/el8/rpm/jetty-runner-$nr_ver-1.el8.noarch.rpm &> /dev/null; then
     echo "Version $nr_ver exists already, nothing to do"

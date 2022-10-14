@@ -13,7 +13,7 @@ BuildArch: noarch
 %{?systemd_requires}
 %define _unitdir /usr/lib/systemd/system
 
-Requires: java >= 1:1.8.0
+Requires: java-11
 
 %description
 Jetty Runner packaged by GBIF for the Integrated Publishing Toolkit (IPT); see https://ipt.gbif.org/manual
