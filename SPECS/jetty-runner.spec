@@ -6,7 +6,7 @@ Version: %{nr_ver}
 Release: %{release_number}%{dist}
 License: ASL 2.0
 URL: http://www.eclipse.org/jetty/
-Source0: https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-runner/%{nr_ver}/jetty-runner-%{nr_ver}.jar
+Source0: https://repo1.maven.org/maven2/org/eclipse/jetty/ee10/jetty-ee10-runner/%{nr_ver}/jetty-ee10-runner-%{nr_ver}.jar
 Summary: Jetty Runner (GBIF)
 BuildArch: noarch
 
